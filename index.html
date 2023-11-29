@@ -7,40 +7,40 @@
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
-        <h1>Contact List Management</h1>
-        <form id="contactForm">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" required /> <br />
+        <div>
+            <h1>Contact List Management</h1>
+            <form id="contactForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required /> <br />
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" required /><br />
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required /><br />
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" required /><br />
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required /><br />
 
-            <label for="linkedIn">LinkedIn Profile URL:</label>
-            <input type="text" id="linkedIn" required /><br />
+                <label for="linkedIn">LinkedIn Profile URL:</label>
+                <input type="text" id="linkedIn" required /><br />
 
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="text" id="phoneNumber" required /><br />
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" id="phoneNumber" required /><br />
 
-            <button type="submit">Add Contact</button>
-        </form>
-        <table id="contactTable">
-            <thead>
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                    <th>LinkedIn</th>
-                    <th>Phone Number</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody id="contactTableBody">
-                <!-- Contact rows will be dynamically added here -->
-            </tbody>
-        </table>
+                <button type="submit">Add Contact</button>
+            </form>
+            <table id="contactTable">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>LinkedIn</th>
+                        <th>Phone Number</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="contactTableBody"></tbody>
+            </table>
+        </div>
         <script src="./script.js"></script>
     </body>
 </html>

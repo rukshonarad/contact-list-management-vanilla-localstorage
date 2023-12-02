@@ -7,40 +7,128 @@
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
-        <div>
+        <main>
             <h1>Contact List Management</h1>
             <form id="contactForm">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" required /> <br />
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="First Name"
+                        required
+                        autofocus
+                    />
 
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" required /><br />
+                    <label for="lastName">Last Name:</label>
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Last Name"
+                        required
+                    />
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" required /><br />
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        required
+                    />
 
-                <label for="linkedIn">LinkedIn Profile URL:</label>
-                <input type="text" id="linkedIn" required /><br />
+                    <label for="linkedInProfile">LinkedIn Profile Url:</label>
+                    <input
+                        type="text"
+                        id="linkedInProfile"
+                        name="linkedInProfile"
+                        placeholder="LindedIn Profile Url"
+                        required
+                    />
 
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="text" id="phoneNumber" required /><br />
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        placeholder="Phone Number"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required
+                    />
+                </div>
 
-                <button type="submit">Add Contact</button>
+                <input type="submit" value="Add Contact" />
+                <hr />
             </form>
-            <table id="contactTable">
+
+            <table id="contactsTable">
                 <thead>
                     <tr>
                         <th>First Name</th>
                         <th>Last Name</th>
-                        <th>Email</th>
-                        <th>LinkedIn</th>
+                        <th>Email Address</th>
+                        <th>LindedIn Profile Url</th>
                         <th>Phone Number</th>
-                        <th>Action</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
-                <tbody id="contactTableBody"></tbody>
+                <tbody class="contacts"></tbody>
             </table>
-        </div>
+
+            <div id="updatePopup">
+                <label for="updateFirstName">First Name:</label>
+                <input
+                    type="text"
+                    id="updateFirstName"
+                    name="updateFirstName"
+                    placeholder="First Name"
+                    required
+                    autofocus
+                />
+
+                <label for="updateLastName">Last Name:</label>
+                <input
+                    type="text"
+                    id="updateLastName"
+                    name="updateLastName"
+                    placeholder="Last Name"
+                    required
+                />
+
+                <label for="updateEmail">Email:</label>
+                <input
+                    type="email"
+                    id="updateEmail"
+                    name="updateEmail"
+                    placeholder="Email"
+                    required
+                />
+
+                <label for="updateLinkedInProfile">LinkedIn Profile Url:</label>
+                <input
+                    type="text"
+                    id="updateLinkedInProfile"
+                    name="updateLinkedInProfile"
+                    placeholder="LindedIn Profile Url"
+                    required
+                />
+
+                <label for="updatePhoneNumber">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="updatePhoneNumber"
+                    name="updatePhoneNumber"
+                    placeholder="Phone Number"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required
+                />
+
+                <button id="saveButton">Save</button>
+                <button id="cancelButton">Cancel</button>
+            </div>
+        </main>
         <script src="./script.js"></script>
     </body>
 </html>
